@@ -43,7 +43,8 @@ body {
     font-size: 2.6rem;
     font-family: 'Ubuntu', sans-serif;
     margin-bottom: .7rem;
-    color: rgb(10, 75, 107);
+    /* color: rgb(10, 75, 107); */
+    color: black;
 }
 
 .heading>img {
