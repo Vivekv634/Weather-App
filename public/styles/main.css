@@ -20,7 +20,7 @@ body {
 .container {
     background-color: rgba(255, 255, 255, .2);
     padding: 2rem;
-    width: 30%;
+    width: 27rem;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -44,7 +44,6 @@ body {
     font-family: 'Ubuntu', sans-serif;
     margin-bottom: .7rem;
     color: rgb(10, 75, 107);
-    /* color: black; */
 }
 
 .heading>img {
@@ -75,6 +74,7 @@ button[type="submit"] {
     right: 0;
     cursor: pointer;
 }
+
 .locationName {
     display: flex;
     justify-content: center;
@@ -84,21 +84,54 @@ button[type="submit"] {
     right: 0;
     left: 0;
 }
-.info{
+
+.info {
     display: flex;
     justify-content: center;
     margin: 0.5rem 0;
 }
-.image{
+
+.image {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 40%;
 }
-.weatherInfo{
+
+.weatherInfo {
     width: 60%;
 }
-.weatherDesc, .weatherInfo > *{
+
+.weatherDesc,
+.weatherInfo>* {
     font-size: .9rem;
+}
+
+@media screen and (max-width:425px) {
+    .container {
+        width: 22rem;
+        padding: 1rem;
+    }
+
+    .heading {
+        font-size: 2.2rem;
+    }
+
+    input[type="text"] {
+        font-size: 1rem;
+    }
+
+    .weatherDesc,
+    .weatherInfo>* {
+        font-size: .7rem;
+    }
+
+    .image>img {
+        height: 70px;
+        width: 70px;
+    }
+    .locationName{
+        font-size: 1.1rem;
+    }
 }
